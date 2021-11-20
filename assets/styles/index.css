@@ -1,0 +1,67 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table#arena {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #333333;
+  border-radius: 10px;
+}
+
+table#arena tr {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #333;
+}
+
+table#arena tr:last-child {
+  border: none;
+}
+
+table#arena tr td {
+  width: 33.333333%;
+  height: 100px;
+  border-right: 1px solid #333;
+}
+
+table#arena tr td:last-child {
+  border: none;
+}
+
+table#arena tr td button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.4s;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+table#arena tr td button:hover {
+  background-color: #333;
+  color: #ffffff;
+}
