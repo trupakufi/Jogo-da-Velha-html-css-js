@@ -13,8 +13,8 @@
       <header class="main-header">
         <h2># Jogo-da-Velha #</h2>
         <nav>
-          <button type="button">Novo Jogo</button>
-          <button type="button">Sair</button>
+          <button type="button" id="NewGameButton">Novo Jogo</button>
+          <button type="button" id="LeaveGameButton">Sair</button>
         </nav>
       </header>
 
@@ -46,7 +46,19 @@
         <p>&copy; by mariovarela99 &copysr; 2021</p>
       </footer>
     </div>
+
+    <section id="NewGame">
+      <div id="New">
+        <h3>Iniciar Novo Jogo ?</h3>
+        <div class="buttonsNew">
+          <button type="button" id="yesNew">Sim</button>
+          <button type="button" id="notNew">Não</button>
+        </div>
+      </div>
+      <button type="button" id="Close">+</button>
+    </section>
     <script src="./assets/scripts/index.js"></script>
     <script src="./assets/scripts/WhoWin.js"></script>
+    <script src="./assets/scripts/NewGame.js"></script>
   </body>
 </html>
