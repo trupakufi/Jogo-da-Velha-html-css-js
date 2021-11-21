@@ -14,8 +14,54 @@ div#root {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+div#root header.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  padding: 10px 35px;
+}
+
+div#root header.main-header h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #333333;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+div#root header.main-header nav {
+  display: flex;
+}
+
+div#root header.main-header nav button {
+  width: 7em;
+  height: 1.8em;
+  margin: 3px;
+  background: #333333;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 5px;
+  font-family: sans-serif;
+  letter-spacing: 0.7px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+div#root header.main-header nav button:hover {
+  background-color: transparent;
+  color: #333333;
+  border: 1px solid #333333;
 }
 
 table#arena {
@@ -62,6 +108,19 @@ table#arena tr td button {
 }
 
 table#arena tr td button:hover {
-  background-color: #333;
+  background-color: #333333;
   color: #ffffff;
+}
+
+div#root footer.main-footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div#root footer.main-footer p {
+  color: #6d6d6d;
+  font-size: 0.9rem;
 }
