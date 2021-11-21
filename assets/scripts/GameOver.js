@@ -1,0 +1,1 @@
+function GameOver(text) {}
