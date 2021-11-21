@@ -6,17 +6,21 @@ const buttons = document.querySelectorAll(
 var WhoIsTime;
 const Who = document.querySelector("h3#Who");
 var player = true;
+const audio = document.querySelector("audio#beep");
 
 buttons.forEach((element, index) => {
   element.addEventListener("click", () => {
-    WhoIsTime = player ? "X" : "O";
-    matriz[index] = WhoIsTime;
-    player = !player;
-    WhoIsTime = player ? "X" : "O";
-    Who.innerHTML = ` É a vez do Jogador ${WhoIsTime}`;
-    RenderArena();
-    WhoWin();
-    console.log(matriz);
+    if (matriz[index] !== "-") {
+      audio.play();
+    } else {
+      WhoIsTime = player ? "X" : "O";
+      matriz[index] = WhoIsTime;
+      player = !player;
+      WhoIsTime = player ? "X" : "O";
+      Who.innerHTML = ` É a vez do Jogador ${WhoIsTime}`;
+      RenderArena();
+      WhoWin();
+    }
   });
 });
 
