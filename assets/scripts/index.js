@@ -25,9 +25,13 @@ buttons.forEach((element, index) => {
 });
 
 function RenderArena() {
-  buttons.forEach((element, index) => {
-    element.innerHTML = matriz[index];
-  });
+  if (!ThereIsSpace()) {
+    AddGameOverBanner("Empate.!");
+  } else {
+    buttons.forEach((element, index) => {
+      element.innerHTML = matriz[index];
+    });
+  }
 }
 
 function CleanArena() {
@@ -40,3 +44,11 @@ function CleanArena() {
 window.addEventListener("load", () => {
   RenderArena();
 });
+
+function ThereIsSpace() {
+  for (let i = 0; i <= matriz.length - 1; i++) {
+    if (matriz[i] === "-") {
+      return true;
+    }
+  }
+}
