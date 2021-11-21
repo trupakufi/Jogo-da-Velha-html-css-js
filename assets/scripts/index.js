@@ -31,9 +31,9 @@ function RenderArena() {
 }
 
 function CleanArena() {
-  matriz.map((item) => {
-    item = "-";
-  });
+  for (let i = 0; i <= matriz.length - 1; i++) {
+    matriz[i] = "-";
+  }
   RenderArena();
 }
 
