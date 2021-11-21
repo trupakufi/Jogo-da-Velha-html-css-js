@@ -124,3 +124,84 @@ div#root footer.main-footer p {
   color: #6d6d6d;
   font-size: 0.9rem;
 }
+
+section#NewGame {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.4s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+section#NewGame button#Close {
+  position: relative;
+  top: -100px;
+  background-color: transparent;
+  margin: 15px;
+  color: #ffffff;
+  border: none;
+  font-size: 3em;
+  transform-origin: 0, 0;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+div#New {
+  width: 300px;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 0.3em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div#New h3 {
+  width: 100%;
+  border-bottom: 1px solid #333333;
+  padding: 2px 15px 10px;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #333333;
+}
+
+div#New div.buttonsNew {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+div#New div.buttonsNew button {
+  width: 45%;
+  height: 2.5em;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  font-family: sans-serif;
+  color: #ffffff;
+  background-color: #333333;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+div#New div.buttonsNew button#yesNew {
+  background-color: rgba(9, 121, 3);
+}
+
+div#New div.buttonsNew button#notNew {
+  background-color: rgb(121, 3, 3);
+}
