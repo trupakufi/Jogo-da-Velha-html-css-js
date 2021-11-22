@@ -1,11 +1,11 @@
-var matriz = ["-", "-", "-", "-", "-", "-", "-", "-", "-"];
+let matriz = ["-", "-", "-", "-", "-", "-", "-", "-", "-"];
 const arena = document.querySelector("table#arena");
 const buttons = document.querySelectorAll(
   "table#arena tr td button.arena-button"
 );
-var WhoIsTime;
+let WhoIsTime;
 const Who = document.querySelector("h3#Who");
-var player = true;
+let player = true;
 const audio = document.querySelector("audio#beep");
 
 buttons.forEach((element, index) => {
