@@ -14,6 +14,10 @@ NewGameButtonOver.addEventListener("click", () => {
   InitNewGame();
 });
 
+GoOutButton.addEventListener("click", () => {
+  RemoveGameOverBanner();
+});
+
 function RemoveGameOverBanner() {
   GameOverBanner.style.visibility = "hidden";
   GameOverBanner.style.opacity = 0;
