@@ -85,27 +85,27 @@ function WhoWin() {
     matriz[4] === matriz[8]
   ) {
     // alert("Jogador X Venceu na Diagonal Secundária");
-    AddGameOverBanner("Jogador X Venceu na Diagonal Secundária");
+    AddGameOverBanner("Jogador X Venceu na Diagonal Principal");
   } else if (
     matriz[0] === "O" &&
     matriz[4] === "O" &&
     matriz[4] === matriz[8]
   ) {
     // alert("Jogador O Venceu na Diagonal Secundária");
-    AddGameOverBanner("Jogador O Venceu na Diagonal Secundária");
+    AddGameOverBanner("Jogador O Venceu na Diagonal Princiapal");
   } else if (
     matriz[2] === "X" &&
     matriz[4] === "X" &&
     matriz[4] === matriz[6]
   ) {
     // alert("Jogador X Venceu na Diagonal Principal");
-    AddGameOverBanner("Jogador X Venceu na Diagonal Principal");
+    AddGameOverBanner("Jogador X Venceu na Diagonal Secundária");
   } else if (
     matriz[2] === "O" &&
     matriz[4] === "O" &&
     matriz[4] === matriz[6]
   ) {
     // alert("Jogador O Venceu na Diagonal Principal");
-    AddGameOverBanner("Jogador O Venceu na Diagonal Principal");
+    AddGameOverBanner("Jogador O Venceu na Diagonal Secundária");
   }
 }
