@@ -43,5 +43,7 @@ E já está.!
 ## Resultado.!
 
 ![Result Image for Jogo da Valha by mariovarela99](./assets/images/results/result1.png)
+![Result Image for Jogo da Valha by mariovarela99](./assets/images/results/result2.png)
+![Result Image for Jogo da Valha by mariovarela99](./assets/images/results/result3.png)
 
 Sinta-se a Vontade para Partilhar, E usar da maneira que quiser.!
