@@ -6,4 +6,14 @@
   div#root header.main-header h2 {
     display: none;
   }
+
+  div#root header.main-header h3 {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  div#root header.main-header h3 {
+    display: none;
+  }
 }
