@@ -212,3 +212,15 @@ div#New div.buttonsNew button#notNew,
 div#Over div.options button#GoOut {
   background-color: rgb(121, 3, 3);
 }
+
+@media screen and (max-width: 548px) {
+  header.main-header {
+    flex-direction: column;
+  }
+
+  section#NewGame button#Close {
+    top: -140px;
+    margin: 0;
+    margin-left: -40px;
+  }
+}
