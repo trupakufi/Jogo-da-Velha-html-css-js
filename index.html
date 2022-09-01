@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="ot">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link rel="stylesheet" href="./assets/styles/index.min.css" />
     <title>Jogo da Velha by mariovarela99</title>
   </head>
   <body>
@@ -12,6 +13,7 @@
     <div id="root">
       <header class="main-header">
         <h2># Jogo-da-Velha #</h2>
+        <h3>#</h3>
         <nav>
           <button type="button" id="NewGameButton">Novo Jogo</button>
           <button type="button" id="LeaveGameButton">Sair</button>
@@ -57,8 +59,21 @@
       </div>
       <button type="button" id="Close">+</button>
     </section>
+
+    <section id="GameOver">
+      <div id="Over">
+        <h3>Game Over.!</h3>
+        <p id="vencedor">O Jogador O Venceu.!</p>
+        <div class="options">
+          <button type="button" id="newgame">Novo Jogo</button>
+          <button type="button" id="GoOut">Sair</button>
+        </div>
+      </div>
+    </section>
+
     <script src="./assets/scripts/index.js"></script>
     <script src="./assets/scripts/WhoWin.js"></script>
     <script src="./assets/scripts/NewGame.js"></script>
+    <script src="./assets/scripts/GameOver.js"></script>
   </body>
 </html>

@@ -14,10 +14,12 @@ NewGameButton.addEventListener("click", () => AddNewGameBanner());
 CloseButton.addEventListener("click", () => RemoveNewGameBanner());
 NotNewButton.addEventListener("click", () => RemoveNewGameBanner());
 
-YesNewButton.addEventListener("click", () => {
+YesNewButton.addEventListener("click", () => InitNewGame());
+
+function InitNewGame() {
   CleanArena();
   RemoveNewGameBanner();
-});
+}
 
 function RemoveNewGameBanner() {
   NewGameBanner.style.visibility = "hidden";

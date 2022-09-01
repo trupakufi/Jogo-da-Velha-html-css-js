@@ -125,7 +125,8 @@ div#root footer.main-footer p {
   font-size: 0.9rem;
 }
 
-section#NewGame {
+section#NewGame,
+section#GameOver {
   position: absolute;
   top: -50px;
   left: 0;
@@ -142,7 +143,7 @@ section#NewGame {
   visibility: hidden;
 }
 
-section#NewGame button#Close {
+button#Close {
   position: relative;
   top: -100px;
   background-color: transparent;
@@ -155,7 +156,8 @@ section#NewGame button#Close {
   cursor: pointer;
 }
 
-div#New {
+div#New,
+div#Over {
   width: 300px;
   height: 200px;
   background-color: #ffffff;
@@ -167,7 +169,8 @@ div#New {
   justify-content: space-between;
 }
 
-div#New h3 {
+div#New h3,
+div#Over h3 {
   width: 100%;
   border-bottom: 1px solid #333333;
   padding: 2px 15px 10px;
@@ -176,7 +179,8 @@ div#New h3 {
   color: #333333;
 }
 
-div#New div.buttonsNew {
+div#New div.buttonsNew,
+div#Over div.options {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -184,7 +188,8 @@ div#New div.buttonsNew {
   height: 100%;
 }
 
-div#New div.buttonsNew button {
+div#New div.buttonsNew button,
+div#Over div.options button {
   width: 45%;
   height: 2.5em;
   font-size: 1em;
@@ -198,11 +203,13 @@ div#New div.buttonsNew button {
   border: 1px solid transparent;
 }
 
-div#New div.buttonsNew button#yesNew {
+div#New div.buttonsNew button#yesNew,
+div#Over div.options button#newgame {
   background-color: rgba(9, 121, 3);
 }
 
-div#New div.buttonsNew button#notNew {
+div#New div.buttonsNew button#notNew,
+div#Over div.options button#GoOut {
   background-color: rgb(121, 3, 3);
 }
 
