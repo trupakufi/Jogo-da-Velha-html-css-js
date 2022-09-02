@@ -1,9 +1,11 @@
-@media screen and (max-width: 768px) {
-  div#root header.main-header {
-    /* justify-content: center; */
+@media screen and (max-width: 548px) {
+  header.main-header {
+    flex-direction: column;
   }
 
-  div#root header.main-header h2 {
-    display: none;
+  section#NewGame button#Close {
+    top: -140px;
+    margin: 0;
+    margin-left: -40px;
   }
 }
