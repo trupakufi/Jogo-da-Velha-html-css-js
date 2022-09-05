@@ -1,12 +1,24 @@
 let matriz = ["-", "-", "-", "-", "-", "-", "-", "-", "-"];
+let WhoIsTime;
+let player = true;
+
+// getting Elements
+const audio = document.querySelector("audio#beep");
 const arena = document.querySelector("table#arena");
 const buttons = document.querySelectorAll(
   "table#arena tr td button.arena-button"
 );
-let WhoIsTime;
 const Who = document.querySelector("h3#Who");
-let player = true;
-const audio = document.querySelector("audio#beep");
+
+function RenderArena() {
+  if (!ThereIsSpace()) {
+    AddGameOverBanner("Empate.!");
+  } else {
+    buttons.forEach((element, index) => {
+      element.innerHTML = matriz[index];
+    });
+  }
+}
 
 buttons.forEach((element, index) => {
   element.addEventListener("click", () => {
@@ -24,26 +36,12 @@ buttons.forEach((element, index) => {
   });
 });
 
-function RenderArena() {
-  if (!ThereIsSpace()) {
-    AddGameOverBanner("Empate.!");
-  } else {
-    buttons.forEach((element, index) => {
-      element.innerHTML = matriz[index];
-    });
-  }
-}
-
 function CleanArena() {
   for (let i = 0; i <= matriz.length - 1; i++) {
     matriz[i] = "-";
   }
   RenderArena();
 }
-
-window.addEventListener("load", () => {
-  RenderArena();
-});
 
 function ThereIsSpace() {
   for (let i = 0; i <= matriz.length - 1; i++) {
@@ -52,3 +50,7 @@ function ThereIsSpace() {
     }
   }
 }
+
+window.addEventListener("load", () => {
+  RenderArena();
+});
